@@ -13,4 +13,4 @@ EXPOSE 1880
 ENV username admin
 ENV password password
 
-CMD "/usr/local/bin/run-node-red.sh" ${username} ${password}
+CMD "/usr/local/bin/run-node-red.sh" ${username} ${password} > /dev/null 2>&1

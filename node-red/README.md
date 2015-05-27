@@ -3,7 +3,7 @@ A CentOS/Node-Red derivative that enables HTTPS using a self-signed certificate 
 
 Example usage:
 
-     sudo docker run --env username=<username> --env password=<password> -dp 1880:1880 geocentric/node-red
+     sudo docker run --env username=<username> --env password=<password> -dp 1880:1880 geocentric/node-red-secure
 
 Then point your brower to it:
 
