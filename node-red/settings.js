@@ -112,15 +112,6 @@ module.exports = {
         cert: fs.readFileSync('/opt/certs/certificate.pem')
     },
 
-    adminAuth: {
-	type: "credentials",
-	users: [{
-            username: "admin-user",
-            password: "admin-password",
-            permissions: "*"
-	}]
-    },
-
     // The following property can be used to configure cross-origin resource sharing
     // in the HTTP nodes.
     // See https://github.com/troygoode/node-cors#configuration-options for

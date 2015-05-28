@@ -1,9 +1,9 @@
 # Node-Red
-A CentOS/Node-Red derivative that enables HTTPS using a self-signed certificate pair that is generated on container startup.  Also, enables user/password setup via command line env  params.
+A CentOS/Node-Red derivative that enables HTTPS using a self-signed certificate pair that is generated on container startup.
 
 Example usage:
 
-     sudo docker run --env username=<username> --env password=<password> -dp 1880:1880 geocentric/node-red-secure
+     sudo docker run -dp 1880:1880 geocentric/node-red-secure
 
 Then point your brower to it:
 
