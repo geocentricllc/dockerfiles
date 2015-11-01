@@ -4,7 +4,7 @@ A CentOS/Node-Red derivative that enables secure HTTPS connectivity using a self
 
 Example usage:
 
-     sudo docker run --env password='<your password hash>' -dp 1880:1880 geocentric/node-red-secure
+     sudo docker run --env username='<your username>' --env password='<your bcrypt password hash>' -dp 1880:1880 geocentric/node-red-secure
 
 Then point your brower to it and login as 'admin' and your provided password:
 

@@ -1,5 +1,5 @@
 #!/bin/bash
-cat /tmp/settings-tmpl.js | sed s~__PASSWORD__~"$password"~g > /tmp/settings.js
+cat /tmp/settings-tmpl.js | sed s~__USERNAME__~"$username"~g | sed s~__PASSWORD__~"$password"~g > /tmp/settings.js
 mkdir -p /opt/certs
 cd /opt/certs
 openssl genrsa -out privatekey.pem 2048 > /dev/null 2>&1
